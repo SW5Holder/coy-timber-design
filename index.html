@@ -1,0 +1,99 @@
+<!-- INDEX.HTML (Homepage) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coy Timber & Design | County Wexford</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body{margin:0;font-family:'Playfair Display',serif;background:#f4efe9;color:#2f241c}
+    header{background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1600&q=80') center/cover;padding:100px 20px;text-align:center;color:#fff}
+    header h1{font-family:'Great Vibes',cursive;font-size:72px;margin:0}
+    header p{letter-spacing:2px;text-transform:uppercase;font-size:14px}
+    nav{background:#3b2a1d;display:flex;justify-content:center}
+    nav a{color:#fff;text-decoration:none;padding:16px 24px}
+    nav a:hover{background:#5a3e27}
+    section{max-width:1100px;margin:auto;padding:80px 25px;text-align:center}
+    .cta{background:#8c6239;color:#fff;padding:14px 30px;text-decoration:none;border-radius:4px;font-weight:bold}
+    footer{background:#1f1712;color:#fff;text-align:center;padding:25px}
+  </style>
+</head>
+<body>
+<header>
+  <h1>Coy Timber & Design</h1>
+  <p>Family-Run Irish Woodworking • County Wexford</p>
+</header>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+  <a href="#booking">Booking</a>
+</nav>
+<section id="home">
+  <h2>Handcrafted Timber Work Built for Irish Homes</h2>
+  <p>
+    Coy Timber & Design is a family-run Irish woodworking business based in County Wexford. 
+    We specialise in high-quality custom pergolas, outdoor timber structures, and bespoke woodwork 
+    designed to suit your home, garden, and lifestyle.
+  </p>
+  <p>
+    Every project is built with care, using durable materials and traditional craftsmanship, 
+    ensuring your timber work not only looks great but lasts for years in the Irish climate.
+  </p>
+  <a class="cta" href="tel:+3530852286002">Call +353 085 228 6002</a>
+</section>
+
+<section id="about">
+  <h2>Why Choose Coy Timber & Design?</h2>
+  <p><strong>✔ Family-run business</strong> – personal service from start to finish</p>
+  <p><strong>✔ Local & reliable</strong> – serving County Wexford only</p>
+  <p><strong>✔ Quality craftsmanship</strong> – built properly, not rushed</p>
+  <p><strong>✔ Bespoke designs</strong> – tailored to your space and budget</p>
+</section>
+
+<section id="services">
+  <h2>What We Build</h2>
+  <p>
+    From garden pergolas and seating areas to fully bespoke outdoor timber projects, 
+    we work closely with our customers to bring their ideas to life.
+  </p>
+  <p>
+    Scroll down to see our services or request a quote using the booking form below.
+  </p>
+  <a class="cta" href="#booking">Request a Booking</a>
+</section>
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p><strong>Phone:</strong> +353 085 228 6002</p>
+  <p><strong>Location:</strong> County Wexford, Ireland</p>
+  <form action="https://formspree.io/f/mgooadgk" method="POST" style="max-width:600px;margin:auto;display:grid;gap:15px">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="4" required>
+    </textarea>
+    <button class="cta" type="submit">Send Message</button>
+  </form>
+</section>
+
+<section id="booking">
+  <h2>Request a Booking</h2>
+  <p>Submit your project details below and we will contact you to confirm pricing and availability.</p>
+  <form action="https://formspree.io/f/mgooadgk" method="POST" style="max-width:600px;margin:auto;display:grid;gap:15px">
+    <input name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <select name="service">
+      <option>Custom Pergola</option>
+      <option>Outdoor Timber Structure</option>
+      <option>Bespoke Woodwork</option>
+    </select>
+    <input name="location" placeholder="Location (County Wexford only)" required>
+    <textarea name="details" placeholder="Project details" rows="4"></textarea>
+    <button class="cta" type="submit">Submit Booking Request</button>
+  </form>
+</section>
+
+<footer>© 2026 Coy Timber & Design • Wexford • Ireland</footer>
+</body>
+</html>
