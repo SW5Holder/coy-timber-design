@@ -1,0 +1,71 @@
+<!-- BOOKING.HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Project | Coy Timber & Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body{margin:0;font-family:'Playfair Display',serif;background:#f4efe9;color:#2f241c}
+    header{background:#3b2a1d;color:#fff;text-align:center;padding:50px 20px}
+    header h1{font-family:'Great Vibes',cursive;font-size:64px;margin:0}
+    header p{text-transform:uppercase;letter-spacing:2px;font-size:14px}
+    nav{background:#1f1712;display:flex;justify-content:center}
+    nav a{color:#fff;text-decoration:none;padding:16px 24px}
+    nav a:hover{background:#5a3e27}
+    section{max-width:700px;margin:auto;padding:80px 25px;text-align:center}
+    form{display:grid;gap:15px}
+    input,select,textarea,button{padding:12px;border-radius:4px;border:none;font-family:inherit}
+    button{background:#8c6239;color:#fff;font-weight:bold;cursor:pointer}
+    footer{background:#1f1712;color:#fff;text-align:center;padding:25px}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Coy Timber & Design</h1>
+  <p>Project Booking</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="index.html#services">Services</a>
+  <a href="index.html#contact">Contact</a>
+  <a href="booking.html">Booking</a>
+</nav>
+
+<section>
+  <h2>Request a Booking</h2>
+  <p>
+    Use the form below to request a booking for your project. 
+    Once submitted, we’ll review your details and contact you to confirm pricing, timelines, and availability.
+  </p>
+  <p><strong>Serving County Wexford only.</strong></p>
+
+  <form action="https://formspree.io/f/mgooadgk" method="POST">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+
+    <select name="service" required>
+      <option value="">Select Service</option>
+      <option>Custom Pergola</option>
+      <option>Outdoor Timber Structure</option>
+      <option>Bespoke Woodwork</option>
+    </select>
+
+    <input type="text" name="location" placeholder="Location (County Wexford)" required>
+
+    <textarea name="details" rows="5" placeholder="Describe your project"></textarea>
+
+    <button type="submit">Submit Booking Request</button>
+  </form>
+</section>
+
+<footer>
+  <p>Payments and dates are confirmed after consultation</p>
+  <p>© 2026 Coy Timber & Design • County Wexford • Ireland</p>
+</footer>
+
+</body>
+</html>
